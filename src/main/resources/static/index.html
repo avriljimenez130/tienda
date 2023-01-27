@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <!-- Esto es un comentario-->
-<html>
+<html lang="es">
     <head>
         <title>TechShop</title>
         <meta charset="UTF-8">
+        <meta name="description" content="Pagina dde la semana 2, Web y Patrones"/>
+        <meta name="keywords" content="Fidelitas, HTML, WEB,"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <h1 style="text-align: center;background-color: blue;color: white">Home</h1>
-        <p>Este es el sitio web de TechShop</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet, magnis potenti fusce donec quam litora purus sed quis, at mi class diam vulputate curabitur ad. Porta mollis lacus quis mattis hendrerit ac iaculis, id curae nostra eros porttitor himenaeos lobortis conubia, maecenas phasellus fusce ante vel turpis. Sed ac consequat a scelerisque fames mus cursus urna, euismod cras nec pellentesque torquent orci dignissim est, gravida eros integer sociosqu penatibus arcu aliquam. Consequat ac tristique non blandit potenti sapien commodo in suscipit, neque lacinia risus et dictum maecenas leo turpis, rutrum ut lacus praesent integer tellus tortor tincidunt. Sagittis dictumst lacinia ultrices mattis tortor ligula pellentesque parturient himenaeos ante, scelerisque phasellus id vel nunc nostra fusce ridiculus nisi, libero urna curabitur venenatis vestibulum mollis orci vitae risus.</p>
-
-        <p style="text-align: center">Dui odio <span style="background-color: red;color: yellow"> ornare praesent</span> laoreet venenatis euismod eros, tempor natoque arcu morbi nibh quis. Turpis justo cum dictumst habitasse egestas, penatibus sagittis elementum dui per, in dignissim taciti odio. Parturient ad nunc iaculis etiam tortor sociosqu aliquet, et vestibulum lectus suscipit vehicula class, quam dignissim gravida volutpat tincidunt leo. Vivamus congue posuere tincidunt sagittis nunc urna mus et nec tellus sed erat, rutrum dictum rhoncus sapien at cras sociosqu luctus donec egestas.</p>
-
-        <p style="text-align: right">Cubilia urna fermentum curabitur ligula congue fusce, suscipit lobortis pellentesque vehicula rhoncus montes dictum, molestie non vestibulum consequat semper. Sodales inceptos ut cum iaculis duis fusce aliquam, sem at facilisi taciti tortor dui senectus, quis scelerisque semper laoreet vivamus nec. Sociis potenti dapibus nisi viverra luctus mi accumsan, velit ligula habitasse proin semper mollis nullam, platea taciti scelerisque nostra hac faucibus. Volutpat eleifend himenaeos habitasse laoreet lobortis primis feugiat fusce iaculis malesuada, ut in pulvinar id lacinia tempus egestas purus aliquam, cubilia diam penatibus nam ante integer cum neque venenatis. Himenaeos quis etiam aliquam cum auctor facilisis taciti varius dis lacinia tincidunt suspendisse mi, egestas lectus placerat dictum est sed ante posuere magna dictumst pharetra et.</p>
-
+        <header class="header">
+            <h1>TechShop</h1>
+            <nav>
+        <a href="ejemplo6.html">Back</a> |
+        <a href="index.html">Home</a> |
+        <a href="ejemplo2.html">Next</a><hr>
+            </nav>
+            <hr>
+        </header>
+        <aside class="aside">
+            <h2 id="noticia">Novedades de la semana</h2> 
+            <p>Tenemos en oferta el videojuego...</p>
+        </aside>
+        <section class="contenido">
+            <h2> Nuestros productos</h2>
+            <article>
+                <header>
+                   <h3 class="titulo">Alienware 5000</h3>
+                </header>
+                <figure>
+                 <img src="img/alienwere.jpg" alt="Imagen de un equipo marca Alienware"/>
+                 <figcaption>Equipo en promocion</figcaption>
+                </figure> 
+               <p>Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet, magnis potenti fusce donec quam litora purus sed quis, at mi class diam vulputate curabitur ad. Porta mollis lacus quis mattis hendrerit ac iaculis, id curae nostra eros porttitor himenaeos lobortis conubia, maecenas phasellus fusce ante vel turpis. Sed ac consequat a scelerisque fames mus cursus urna, euismod cras nec pellentesque torquent orci dignissim est, gravida eros integer sociosqu penatibus arcu aliquam. Consequat ac tristique non blandit potenti sapien commodo in suscipit, neque lacinia risus et dictum maecenas leo turpis, rutrum ut lacus praesent integer tellus tortor tincidunt. Sagittis dictumst lacinia ultrices mattis tortor ligula pellentesque parturient himenaeos ante, scelerisque phasellus id vel nunc nostra fusce ridiculus nisi, libero urna curabitur venenatis vestibulum mollis orci vitae risus.</p>
+               <<footer> $450.000 <a href="#">Comprar</a></footer>
+            </article>
+              <article>
+                <header>
+                   <h3 class="titulo">Dell</h3>
+                </header>
+                <figure>
+                 
+                 <figcaption>Equipo en promocion</figcaption>
+                </figure> 
+               <p>Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet, magnis potenti fusce donec quam litora purus sed quis, at mi class diam vulputate curabitur ad. Porta mollis lacus quis mattis hendrerit ac iaculis, id curae nostra eros porttitor himenaeos lobortis conubia, maecenas phasellus fusce ante vel turpis. Sed ac consequat a scelerisque fames mus cursus urna, euismod cras nec pellentesque torquent orci dignissim est, gravida eros integer sociosqu penatibus arcu aliquam. Consequat ac tristique non blandit potenti sapien commodo in suscipit, neque lacinia risus et dictum maecenas leo turpis, rutrum ut lacus praesent integer tellus tortor tincidunt. Sagittis dictumst lacinia ultrices mattis tortor ligula pellentesque parturient himenaeos ante, scelerisque phasellus id vel nunc nostra fusce ridiculus nisi, libero urna curabitur venenatis vestibulum mollis orci vitae risus.</p>
+               <<footer> $300.000 <a href="#">Comprar</a></footer>
+            </article>
+            <article>
+                <header>
+                   <h3 class="titulo">HP</h3>
+                </header>
+                <figure>
+                
+                 <figcaption>Equipo en promocion</figcaption>
+                </figure> 
+               <p>Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet, magnis potenti fusce donec quam litora purus sed quis, at mi class diam vulputate curabitur ad. Porta mollis lacus quis mattis hendrerit ac iaculis, id curae nostra eros porttitor himenaeos lobortis conubia, maecenas phasellus fusce ante vel turpis. Sed ac consequat a scelerisque fames mus cursus urna, euismod cras nec pellentesque torquent orci dignissim est, gravida eros integer sociosqu penatibus arcu aliquam. Consequat ac tristique non blandit potenti sapien commodo in suscipit, neque lacinia risus et dictum maecenas leo turpis, rutrum ut lacus praesent integer tellus tortor tincidunt. Sagittis dictumst lacinia ultrices mattis tortor ligula pellentesque parturient himenaeos ante, scelerisque phasellus id vel nunc nostra fusce ridiculus nisi, libero urna curabitur venenatis vestibulum mollis orci vitae risus.</p>
+               <<footer> $200.000 <a href="#">Comprar</a></footer>
+            </article>
+        </section>
+        <footer class="footer">
+            Desarrollos tecnologicos Coronado 2023 &COPY; 
+        </footer>
     </body>
 </html>
