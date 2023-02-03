@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- Esto es un comentario-->
+<html lang="es">
+    <head>
+        <title>TechShop</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Pagina dde la semana 2, Web y Patrones"/>
+        <meta name="keywords" content="Fidelitas, HTML, WEB,"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <a class="logo nav-link" href="index.html">TechShop</a>
+                <ul class="nav-menu">
+                   
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="ejemplo6.html">&LeftTriangleBar;</a></li> 
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link"  href="ejemplo2.html">&RightTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link"  href="audios.html">Audios</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link"  href="videos.html">Videos</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link"  href="iframe.html">Iframe</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link"  href="form.html">Formulario</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <aside class="aside">
+            <h2 id="noticia">Novedades de la semana</h2> 
+            <p>Tenemos en oferta el videojuego...</p>
+        </aside>
+        <section class="contenido">
+            <h2>Clientes</h2>
+            <article>
+                <h3>Listado de Clientes</h3>
+                <table border="0">
+                    <thead>
+                        <tr>
+                            <th class="textoCentrado">Id</th>
+                            <th class="textoCentrado">Nombre</th>
+                            <th class="textoCentrado">Edad</th>
+                            <th class="textoCentrado">Salario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="textoCentrado">1</td>
+                            <td>Juan Perez Castro</td>
+                            <td class="textoCentrado">35</td>
+                            <td class="textoDerecho">$300</td>
+                        </tr>
+                        <tr>
+                            <td class="textoCentrado">2</td>
+                            <td>Ana Mora Picado</td>
+                            <td class="textoCentrado">22</td>
+                            <td class="textoDerecho">$100</td>
+                        </tr>
+                        <tr>
+                            <td class="textoCentrado">3</td>
+                            <td>Emilia Fallas Monge</td>
+                            <td class="textoCentrado">32</td>
+                            <td class="textoDerecho">$500</td>
+                        </tr>
+                        <tr>
+                            <td class="textoCentrado">4</td>
+                            <td>Maria Jose Vargas Rojas</td>
+                            <td class="textoCentrado">18</td>
+                            <td class="textoDerecho">$50</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                
+            <hr/>  
+            </article>
+            <article>
+                <h3>Registro de Clientes</h3>
+                <form action="/cliente/insertar" >
+                    <input type="hidden" name="id" value="5" />
+                    <fieldset>
+                        <label>Nombre</label>
+                        <input type="text" name="nombre" value="" size="40" />
+                    </fieldset>
+                     <fieldset>
+                        <label>Clave</label>
+                        <input type="password" name="clave" value="" size="10" />
+                    </fieldset>
+                     <fieldset>
+                        <label>Edad</label>
+                        <input type="number" 
+                               name="edad" 
+                               min="18"
+                               value=""/>
+                    </fieldset>
+                    <fieldset>
+                        <label>Salario</label>
+                        <input type="number" 
+                               name="salario" 
+                               min="50"
+                               value=""/>
+                    </fieldset>
+                    <input type="submit" value="Enviar" />
+                </form>
+                
+            </article>
+        </section>
+        
+        <footer class="footer">
+            Desarrollos tecnologicos Coronado 2023 &COPY; 
+        </footer>
+    </body>
+</html>
