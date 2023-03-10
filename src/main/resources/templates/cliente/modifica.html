@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <head>
+    <head th:replace="~{layout/plantilla :: head}">
         <title>TechShop</title>
         <meta charset="UTF-8"/>
-        
     </head>
     <body>
         <h2>Datos de cliente</h2>
@@ -50,6 +49,7 @@
             <br>
             <input type="submit" value="Guardar" />
         </form>
-        
+            <footer th:replace="~{layout/plantilla :: footer}"/>
+
     </body>
 </html>

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class ClienteServiceImpl implements ClienteService{
     
 
-//Esto cea una unica copia de un objeto
+//Esto crea una unica copia de un objeto
     @Autowired   
     private ClienteDao clienteDao;
     
