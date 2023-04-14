@@ -10,24 +10,22 @@ import lombok.Data;
 public class Cliente implements Serializable {
     private static final long serialVersionUID = 1L;
     
-    @Id /*llave primaria PK*/ 
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id_cliente")  /*nombre real en la bse de datos, para todas las
-    clases del domain que tengan asociacion*/
+    @Column(name="id_cliente")
     private Long idCliente;
     
     private String nombre;
     private String apellidos;
     private String correo;
     private String telefono;
-
-    @JoinColumn(name="id_credito", referencedColumnName="id_credito")  /*nombre real en la bse de datos, para todas las
-    clases del domain que tengan asociacion*/
+    
+    //Relacion credito
+    @JoinColumn(name="id_credito", referencedColumnName="id_credito")
     @ManyToOne
     private Credito credito;
-    
+
     public Cliente() {
-        
     }
 
     public Cliente(String nombre, String apellidos, String correo, String telefono, Credito credito) {
@@ -37,6 +35,4 @@ public class Cliente implements Serializable {
         this.telefono = telefono;
         this.credito = credito;
     }
-    
-    
 }

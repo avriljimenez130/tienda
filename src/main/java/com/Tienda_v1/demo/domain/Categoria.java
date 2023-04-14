@@ -10,10 +10,9 @@ import lombok.Data;
 public class Categoria implements Serializable {
     private static final long serialVersionUID = 1L;
     
-    @Id /*llave primaria PK*/ 
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id_categoria")  /*nombre real en la bse de datos, para todas las
-    clases del domain que tengan asociacion*/
+    @Column(name ="id_categoria")
     private Long idCategoria;
     
     private String descripcion;
@@ -26,8 +25,4 @@ public class Categoria implements Serializable {
         this.descripcion = descripcion;
         this.activo = activo;
     }
-
-   
-
-    
 }

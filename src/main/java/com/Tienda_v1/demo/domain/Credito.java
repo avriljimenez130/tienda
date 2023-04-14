@@ -10,10 +10,9 @@ import lombok.Data;
 public class Credito implements Serializable {
     private static final long serialVersionUID = 1L;
     
-    @Id /*llave primaria PK*/ 
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id_credito")  /*nombre real en la bse de datos, para todas las
-    clases del domain que tengan asociacion*/
+    @Column(name ="id_credito")
     private Long idCredito;
     
     private double limite;
@@ -22,9 +21,6 @@ public class Credito implements Serializable {
     }
 
     public Credito(double limite) {
-        
         this.limite = limite;
     }
-    
-    
 }

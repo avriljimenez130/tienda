@@ -5,12 +5,10 @@
         <meta charset="UTF-8"/>
     </head>
     <body>
+        <header th:replace="~{layout/plantilla :: header}"></header>
         
-        <section th:replace="~{cliente/fragmentos :: botonesAgregar}"/>
+        <section th:replace="~{cliente/fragmentos :: editarCliente}"></section>
         
-        <section th:replace="~{cliente/fragmentos :: editarCliente}"/>
-        
-        <footer th:replace="~{layout/plantilla :: footer}"/>
-
+        <footer th:replace="~{layout/plantilla :: footer}"></footer>
     </body>
 </html>
